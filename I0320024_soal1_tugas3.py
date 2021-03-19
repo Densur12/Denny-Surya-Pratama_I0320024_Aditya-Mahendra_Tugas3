@@ -4,7 +4,7 @@ list_teman = ['Fajri', 'Anisa', 'Erika', 'Karsa', 'Sekar', 'Vizal', 'Bonang', 'M
 # Menampilkan isi list nomor 4,6,7
 print("Nama Teman pada index nomor 4,6,7 : ",list_teman[4],list_teman[6],list_teman[7])
 
-Merubah nama teman pada index 3,5,9
+#Merubah nama teman pada index 3,5,9
 list_teman[3] = 'Narista'
 list_teman[5] = 'Attar'
 list_teman[9] = 'Rafly'
@@ -14,7 +14,10 @@ list_teman.append('Gea')
 list_teman.append('Rara')
 
 #Menampilkan semua nama teman beserta perulangan
-print('Perulangan list nama teman : ', (list_teman*3))
+urutan = 0
+for data in range(0, 12):
+    print(list_teman[urutan])
+    urutan = urutan + 1
 
 #Menampilkan panjang list
 print('Panjang list nama teman : ', len(list_teman))
